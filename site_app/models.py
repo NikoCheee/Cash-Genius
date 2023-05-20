@@ -2,6 +2,11 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
+def get_user():
+    user = User.pk
+    return user
+
+
 class Category(models.Model):
     name = models.CharField(max_length=100)
     english_name = models.CharField(max_length=100)
@@ -34,7 +39,7 @@ class Article(models.Model):
     date_added = models.DateField(auto_now_add=True)
     date_updated = models.DateField(auto_now=True)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
-    author = models.ForeignKey(User, null=True, on_delete=models.SET_NULL, default=User.pk)
+    author = models.ForeignKey(User, null=True, on_delete=models.SET_NULL, default=get_user)
     english_version = models.ForeignKey(EnglishArticle, on_delete=models.SET_NULL, null=True, blank=True) # TODO Змінити поле на ван ту ван філд
     tags = models.ManyToManyField(Tag, blank=True)
 
