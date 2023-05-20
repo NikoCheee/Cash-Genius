@@ -40,7 +40,7 @@ class Article(models.Model):
     date_updated = models.DateField(auto_now=True)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
     author = models.ForeignKey(User, null=True, on_delete=models.SET_NULL, default=get_user)
-    english_version = models.ForeignKey(EnglishArticle, on_delete=models.SET_NULL, null=True, blank=True) # TODO Змінити поле на ван ту ван філд
+    english_version = models.OneToOneField(EnglishArticle, on_delete=models.SET_NULL, null=True, blank=True)
     tags = models.ManyToManyField(Tag, blank=True)
 
     def __str__(self):
