@@ -6,8 +6,9 @@ const axIstance = axios.create({
 });
 
 export async function getAllArticles(category, params) {
-  // console.log(params);
-  return await axIstance.get(category, params);
+  if (category === "financial_guide")
+    return await axIstance.get(category, params);
+  else return await axIstance.get(`category/${category}`, params);
 }
 
 export async function getArticleById(artId) {

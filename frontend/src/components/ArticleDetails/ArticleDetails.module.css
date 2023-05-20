@@ -79,6 +79,10 @@
   display: none;
 }
 
+.emptyMessage {
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .pageTitle {
     display: none;
@@ -155,12 +159,6 @@
   .mobileArrow {
     display: none;
   }
-
-  .content {
-    font-family: Georgia;
-    font-size: 20px;
-    line-height: 26px;
-  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -226,11 +224,5 @@
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 24px;
-  }
-
-  .content {
-    font-family: Georgia;
-    font-size: 20px;
-    line-height: 26px;
   }
 }
