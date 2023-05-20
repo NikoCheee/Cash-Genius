@@ -12,11 +12,6 @@ def main_page(request):
     return Response()
 
 
-@api_view(['GET'])
-def about(request):
-    return Response()
-
-
 def create_paginator(query, num_objects):
     """
     Function for making paginator with flexible number of objects per page.
