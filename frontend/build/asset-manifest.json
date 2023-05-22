@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1ffc3b7c.css",
-    "main.js": "/static/js/main.f585bb8c.js",
+    "main.css": "/static/css/main.3e387d1a.css",
+    "main.js": "/static/js/main.e73cb52d.js",
     "static/js/787.074db138.chunk.js": "/static/js/787.074db138.chunk.js",
     "static/media/hero-bg-desk@2x.jpg": "/static/media/hero-bg-desk@2x.6a3b1b286b91234bdf15.jpg",
     "static/media/CormorantGaramond-Bold.ttf": "/static/media/CormorantGaramond-Bold.baa49dd6bbfc40f18cc9.ttf",
@@ -66,12 +66,12 @@
     "static/media/404.svg": "/static/media/404.b59a0c89bd20a4a9d8316b36d46006cd.svg",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.1ffc3b7c.css.map": "/static/css/main.1ffc3b7c.css.map",
-    "main.f585bb8c.js.map": "/static/js/main.f585bb8c.js.map",
+    "main.3e387d1a.css.map": "/static/css/main.3e387d1a.css.map",
+    "main.e73cb52d.js.map": "/static/js/main.e73cb52d.js.map",
     "787.074db138.chunk.js.map": "/static/js/787.074db138.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ffc3b7c.css",
-    "static/js/main.f585bb8c.js"
+    "static/css/main.3e387d1a.css",
+    "static/js/main.e73cb52d.js"
   ]
 }
