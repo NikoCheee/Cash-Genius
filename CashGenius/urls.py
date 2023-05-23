@@ -25,10 +25,7 @@ from django.views.generic import TemplateView, RedirectView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('site_app.urls')),
-    re_path(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon.ico')),
     re_path(r'^manifest\.json$', RedirectView.as_view(url='/static/manifest.json')),
-    path("", TemplateView.as_view(template_name="index.html")),   # це додамо після зміни ендпоінтів
-    # re_path(r".*", TemplateView.as_view(template_name="index.html")),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
@@ -36,3 +33,7 @@ urlpatterns += staticfiles_urlpatterns()
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+urlpatterns += [
+    path("", TemplateView.as_view(template_name="index.html")),
+    re_path(r'^(?:.*)/?$', TemplateView.as_view(template_name="index.html")),
+    ]
