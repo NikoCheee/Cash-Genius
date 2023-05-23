@@ -5,7 +5,7 @@ from .models import Article, EnglishArticle
 class EnglishArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = EnglishArticle
-        fields = ['title', 'content']
+        fields = ['title', 'content', 'description']
 
 
 class ArticleSerializer(serializers.ModelSerializer):
