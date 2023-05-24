@@ -23,10 +23,10 @@ def create_paginator(query, num_objects):
     try:
         paginator = Paginator(query, num_objects)
     except ValueError:  # Результат обробки винятку може бути змінений
-        num_objects = 10
+        num_objects = 6
         paginator = Paginator(query, num_objects)
     except TypeError:  # Результат обробки винятку може бути змінений
-        num_objects = 10
+        num_objects = 6
         paginator = Paginator(query, num_objects)
 
     return paginator
